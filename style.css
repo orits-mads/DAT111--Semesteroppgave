@@ -21,6 +21,10 @@
     }
   }
 
+  .header h1 {
+    content-visibility: hidden;
+  }
+
   nav-links {
     list-style-type: none;
     margin: 0;
@@ -37,4 +41,11 @@
     color: #333;
   }
   
-  
+  footer {
+    background-color: #D5D8D0;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
