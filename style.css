@@ -57,6 +57,19 @@
     margin-left: 20px;
   }
 
+  img[src="bilder/Portrett.jpg"] {
+    width: 300px;
+    border-radius: 50%;
+    height: auto;
+    display: block;
+  }
+
+  img[src="bilder/Vitor.Jpg"] {
+    width: 300px;
+    height: auto;
+    display: block;
+  }
+
   #sidebar {
     width: 200px;
     background-color: #D5D8D0;
