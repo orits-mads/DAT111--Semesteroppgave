@@ -1,3 +1,5 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
 * {
     margin: 0;
     padding: 0;
@@ -62,7 +64,9 @@
 
   .nav-links .dropdown-menu {
     display: none;
+    background-color: #40a359;
     min-width: 143.5px;
+    background-color: #40a359;
 }
 
 
@@ -70,18 +74,19 @@
     display: block;
     width: 100px;
     position: absolute; 
-    background-color: #27ae60; 
+    background-color: #40a359; 
     border-radius: 5px;
 }
 
 
 .nav-links .dropdown-toggle:hover {
-    background-color: #27ae60; 
-    color: #ecf0f1;
+    background-color: #40a359; 
+    color: #000000;
 }
 
 .nav-links .dropdown-menu .dropdown-item {
-    color: white;
+    background-color: #40a359;
+    color: white;    
     padding: 5px 10px;
     font-size: 14px;
     line-height: 1.2;
