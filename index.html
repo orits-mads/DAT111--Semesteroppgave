@@ -5,23 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hjem</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     
-    <header class="header">
-        <a href="index.html">
-            <img src="bilder/HVLtopia_logo.png" alt="HVLtopia logo">
+    <!-- Gammel navigasjon
+    <header class="navbar">
+        <a class="navbar-brand" href="index.html">
+            <img src="bilder/HVLtopia_logo.png" alt="HVLtopia logo" class="logo">
         </a>
-        <nav class="nav-links">
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="project.html">Prosjekt</a></li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Hjem</a></li>
+                <li class="nav-item"><a class="nav-link" href="project.html">Prosjekt</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="solutions.html" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Løsninger
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
@@ -30,12 +34,38 @@
                         <li><a class="dropdown-item" href="solutions3.html">Løsning 3</a></li>
                     </ul>
                 </li>
-                <li><a href="csr.html">Samfunnsansvar</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li class="nav-item"><a class="nav-link" href="csr.html">Samfunnsansvar</a></li>
+                <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
+    -->
     
+    <!-- Ny navigasjon med Bootstrap -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="bilder/HVLtopia_logo.png" alt="HVLtopia logo" class="logo svg-anim" height="100">
+            </a>
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Hjem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Prosjekt</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="solutions.html" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Løsninger</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="solutions1.html">Løsning 1</a></li>
+                            <li><a class="dropdown-item" href="solutions2.html">Løsning 2</a></li>
+                            <li><a class="dropdown-item" href="solutions3.html">Løsning 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="csr.html">Samfunnsansvar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
     <main id="main">
         <article class="content">
             <h1>HVLtopia: En Fremtidsvisjon for Bærekraftig Byutvikling i Bergen</h1> 
@@ -58,7 +88,10 @@
     <footer class="footer">
         <p>&copy; 2024 HVLtopia</p>
     </footer>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
