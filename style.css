@@ -22,6 +22,10 @@ header img {
   width: 100px;
 }
 
+.content {
+  padding: 1rem;
+}
+
 .navbar {
   background-color: #9ecfb7; 
   padding: 0.5rem 1rem;
