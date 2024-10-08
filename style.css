@@ -47,10 +47,15 @@ header img {
 
 .dropdown-menu {
   background-color: #40a359; 
+  width: 100%;
+  min-width: 100%;
 }
 
 .dropdown-item {
   color: white; 
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .dropdown-item:hover {
@@ -59,6 +64,10 @@ header img {
 
 .nav-item.dropdown:hover .dropdown-menu {
   display: block; 
+}
+
+.nav-item .dropdown-toggle {
+  padding: 0.5rem 1rem;
 }
 
 #sidebar {
