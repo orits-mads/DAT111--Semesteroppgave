@@ -23,7 +23,7 @@ header img {
 }
 
 .navbar {
-  background-color: #9ecfb7; /* Match your existing nav background */
+  background-color: #9ecfb7; 
   padding: 0.5rem 1rem;
 }
 
@@ -32,7 +32,7 @@ header img {
 }
 
 .navbar-nav .nav-link {
-  color: black; /* Change link color to match your design */
+  color: black; 
   padding: 0.5rem 1rem;
 }
 
@@ -41,23 +41,26 @@ header img {
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: #64b578; /* Hover effect for links */
-  color: white; /* Change text color on hover */
+  background-color: #64b578; 
+  color: white; 
 }
 
 .dropdown-menu {
-  background-color: #40a359; /* Dropdown menu background */
+  background-color: #40a359; 
 }
 
 .dropdown-item {
-  color: white; /* Dropdown item text color */
+  color: white; 
 }
 
 .dropdown-item:hover {
-  background-color: #1e8449; /* Hover effect for dropdown items */
+  background-color: #1e8449; 
 }
 
-/* Adjust sidebar styles to keep them consistent with the navbar */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; 
+}
+
 #sidebar {
   width: 200px;
   background-color: #D5D8D0;
@@ -145,8 +148,20 @@ footer {
 .rounded-image {
   width: 150px;
     height: 150px;
-    object-fit: cover; /* Cover the whole area */
-    border-radius: 50%; /* Make it circular */
-    object-position: center top; /* Focus on the top center */
-    object-position: center 15%; /* Focus on the center but move it down */
+    object-fit: cover; 
+    border-radius: 50%; 
+    object-position: center top; 
+    object-position: center 15%;
+}
+
+.custom-button {
+  background-color: #28a745; 
+  color: white; 
+  border: none; 
+}
+
+.custom-button:hover {
+  background-color: #218838; /* Darker shade on hover */
+  color: white; /* Ensure text color remains white */
+  border: none; /* Maintain no border on hover */
 }
