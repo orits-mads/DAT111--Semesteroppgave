@@ -6,58 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hjem</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css"> 
 </head>
 
 <body>
     
     <header class="header">
-        <a href="index.html">
-            <img src="bilder/HVLtopia_logo.png" alt="HVLtopia logo">
-        </a>
-        <nav class="nav-links">
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="project.html">Prosjekt</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Løsninger
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
-                        <li><a class="dropdown-item" href="solutions1.html">Løsning 1</a></li>
-                        <li><a class="dropdown-item" href="solutions2.html">Løsning 2</a></li>
-                        <li><a class="dropdown-item" href="solutions3.html">Løsning 3</a></li>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <img src="bilder/HVLtopia_logo.png" alt="HVLtopia logo" style="max-width: 150px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto"> 
+                        <li class="nav-item"><a class="nav-link" href="index.html">Hjem</a></li>
+                        <li class="nav-item"><a class="nav-link" href="project.html">Prosjekt</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Løsninger</a>
+                            <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                                <li><a class="dropdown-item" href="solutions1.html">Løsning 1</a></li>
+                                <li><a class="dropdown-item" href="solutions2.html">Løsning 2</a></li>
+                                <li><a class="dropdown-item" href="solutions3.html">Løsning 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="csr.html">Samfunnsansvar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
                     </ul>
-                </li>
-                <li><a href="csr.html">Samfunnsansvar</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
     
     <main id="main">
-        <article class="content">
-            <h1>HVLtopia: En Fremtidsvisjon for Bærekraftig Byutvikling i Bergen</h1> 
+        <section class="hero">
+            <img src="bilder/Green Enviorment.jpg" alt="HVLtopia Background" class="img-fluid" style="width: 100%; height: auto;">
+            <div class="hero-content text-center text-white">
+                <div class="container">
+                    <h1>HVLtopia: En Fremtidsvisjon for Bærekraftig Byutvikling i Bergen</h1>
+                    <p>Oppdag en grønnere mulighet med innovative løsninger!</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="content container mt-4">
             <p> 
                 I en tid med økende fokus på bærekraft og miljøvennlig byutvikling, har Bergen kommune lansert et innovativt prosjekt kalt HVLtopia. Dette fremtidsrettede initiativet har som mål å skape en smartere og mer bærekraftig by ved hjelp av teknologi og IT-løsninger. Prosjektet setter innbyggernes trivsel og trygghet i sentrum, samtidig som det adresserer utfordringer som forurensning, støy og energiforbruk i byene.
-
+            </p>
+            <p>
                 Gjennom smarte sensorer og digitale løsninger vil HVLtopia kontinuerlig overvåke luftkvalitet, temperaturer og støyforhold for å sikre et sunnere og mer miljøvennlig bymiljø. Ved å fokusere på innovative transportløsninger og energieffektive systemer, skal prosjektet også bidra til å redusere karbonavtrykket til byen og samtidig gjøre hverdagen enklere for befolkningen.
-        
+            </p>
+            <p>
                 HVLtopia handler ikke bare om teknologi, men også om utdanning. En viktig del av prosjektet er å øke innbyggernes bevissthet rundt bærekraftig utvikling gjennom informasjonskampanjer og smarte løsninger. Målet er å engasjere innbyggerne til å ta del i utviklingen av en grønnere by, der alle bidrar til en mer miljøvennlig hverdag.
-        
+            </p>
+            <p>
                 Gjennom samarbeid med lokale IT-studenter har prosjektet satt i gang en rekke initiativer for å designe og kode nettsider som skal fungere som informasjonsportaler for HVLtopia. Disse nettsidene vil presentere prosjektets fremdrift, høydepunkter og gi en dypere innsikt i hvordan teknologiske løsninger kan forme byene våre for fremtiden.
-        
-        HVLtopia representerer en visjon om en mer bærekraftig og smartere fremtid for Bergen – en fremtid der teknologi og grønn utvikling går hånd i hånd for å skape et bedre bymiljø for kommende generasjoner.</p>
+            </p>
+            <p>
+                HVLtopia representerer en visjon om en mer bærekraftig og smartere fremtid for Bergen – en fremtid der teknologi og grønn utvikling går hånd i hånd for å skape et bedre bymiljø for kommende generasjoner.
+            </p>
         </article>
-
     </main>
 
-
-
-    <footer class="footer">
+    <footer class="footer text-center mt-4">
         <p>&copy; 2024 HVLtopia</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

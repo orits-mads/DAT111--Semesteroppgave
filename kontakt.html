@@ -13,54 +13,88 @@
 <body>
 
     <header class="header">
-        <a href="index.html">
-            <img src="bilder/HVLtopia_logo.png" alt="HVLtopia logo">
-        </a>
-        <nav class="nav-links">
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="project.html">Prosjekt</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Løsninger
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
-                        <li><a class="dropdown-item" href="solutions1.html">Løsning 1</a></li>
-                        <li><a class="dropdown-item" href="solutions2.html">Løsning 2</a></li>
-                        <li><a class="dropdown-item" href="solutions3.html">Løsning 3</a></li>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <img src="bilder/HVLtopia_logo.png" alt="HVLtopia logo" style="max-width: 150px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto"> 
+                        <li class="nav-item"><a class="nav-link" href="index.html">Hjem</a></li>
+                        <li class="nav-item"><a class="nav-link" href="project.html">Prosjekt</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Løsninger</a>
+                            <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                                <li><a class="dropdown-item" href="solutions1.html">Løsning 1</a></li>
+                                <li><a class="dropdown-item" href="solutions2.html">Løsning 2</a></li>
+                                <li><a class="dropdown-item" href="solutions3.html">Løsning 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="csr.html">Samfunnsansvar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
                     </ul>
-                </li>
-                <li><a href="csr.html">Samfunnsansvar</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-<main >
-    <h1>Kontakt</h1>
-    <section>Teamet bak HVLtopia jobber hardt med å få frem de gode grønne sidene Bergen har å by på.</section>
-    <h2>Team</h2>
-    <ol>
-        <li><a href="mads.html">Mads</a></li>
-        <li><a href="tor.html">Tor</a></li>
-        <li><a href="david.html">David</a></li>
-        <li><a href="andreas.html">Andreas</a></li>
-        <li><a href="Vitor.html">Vitor</a></li>
-
-    </ol>
+    <main id="main" class="container mt-4">
+        <section class="contact-section">
+            <h2 class="text-center">Kontakt teamet</h2>
+            <p class="text-center">Fyll ut skjemaet nedenfor eller kontakt teamet vårt direkte.</p>
     
-    <section>
-        <h3>Kontaktinformasjon</h3>
-        <p>Kontakt oss på følgende adresse:</p>
-        <p>Telefon: 12345678</p>
-        <p>E-post: info@example.com</p>
-    </section>
-
-
-</main>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-2 mb-4">
+                    <img src="bilder/mads.jpg" alt="Mads" class="img-fluid rounded-circle mb-2">
+                    <h5>Mads</h5>
+                    <p>mads@example.com</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <img src="bilder/Portrett.jpg" alt="David" class="rounded-image">
+                    <h5>David</h5>
+                    <p>david@example.com</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <img src="bilder/Vitor.jpg" alt="Vitor" class="img-fluid rounded-circle mb-2">
+                    <h5>Vitor</h5>
+                    <p>vitor@example.com</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <img src="bilder/Andy.jpg" alt="Vitor" class="img-fluid rounded-circle mb-2">
+                    <h5>Andreas</h5>
+                    <p>andreas@example.com</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <img src="bilder/Tor.jpeg" alt="Vitor" class="img-fluid rounded-circle mb-2">
+                    <h5>Tor</h5>
+                    <p>tor@example.com</p>
+                </div>
+            </div>
+    
+            <h3 class="mt-4">Send oss en melding</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Navn</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ditt navn" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-post</label>
+                    <input type="email" class="form-control" id="email" placeholder="Din e-post" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Melding</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Din melding" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send melding</button>
+            </form>
+        </section>
+    </main>
 
 <footer class="footer">
-    <p>&copy; 2023 HVLtopia</p>
+    <p>&copy; 2024 HVLtopia</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
