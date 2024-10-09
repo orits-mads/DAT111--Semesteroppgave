@@ -42,7 +42,7 @@
 	<section class ="container mt-4">
         <h1>Smarte transport</h1>
         <p>tilgjengelige grønne transportmidler som sykkelutleie, elbiler, og offentlig transport, og vil også vise sanntidsdata om tilgjengelighet og ruteoptimalisering.</p>
-        <img src="bilder/transporløsning_full.jpeg" class="img-fluid" alt="Løsning 2"  style= "width: 100%; height: auto; object-fit: cover>
+        <img src="bilder/transporløsning.jpeg" class="img-fluid" alt="Løsning 2"  style= "width: 100%; height: auto; object-fit: cover>
      <div class = "container mt-4"-content text center text-white">
 	  
 	  </div>
@@ -50,25 +50,31 @@
 	 
 	 <section class = "content">
 		
-		<p>Kategorier for Transportløsninger
+		<p>Kategorier for Transportløsninger: <b>
 
     Sykkelutleie: Henter informasjon om tilgjengelige sykler fra API og viser i en tabell eller et kart.
     Elbiler: Viser tilgjengelige elbiler og ladestasjoner på kartet.
     Offentlig transport: Sanntidsinformasjon om ankomst- og avgangstider, og oversikt over ruter.</p>
-	<p><b> Sanntidsinformasjon
+	
+	<p><b> Sanntidsinformasjon: <b>
 
-    API-kall: Backend gjør periodiske kall til API-er fra sykkelutleie, elbilleie og offentlige transportaktører for å hente sanntidsdata.
+    API-kall: Backend gjør periodiske kall til API-er fra sykkelutleie, elbilleie
+	og offentlige transportaktører for å hente sanntidsdata.
     Oppdatering på Frontend: Dataene oppdateres kontinuerlig på frontend ved bruk av WebSockets eller SSE.<p>
 	
-	<p><b> Kartvisning
+	<p><b> Kartvisning:<b>
 
-    Leaflet.js/Google Maps API: Kartet viser plassering av sykkelstasjoner, elbilutleiestasjoner og offentlig transportstasjoner i sanntid.
-    Markører: Forskjellige markører for ulike typer transportmidler. For eksempel kan sykkelstasjoner ha et sykkelikon, og elbilstasjoner kan ha et elbilikon.
-    Filtrering: Brukeren kan filtrere kartet for kun å vise bestemte typer transportmidler (f.eks. bare elbiler eller bare offentlig transport).<p>
+    Leaflet.js/Google Maps API: Kartet viser plassering av sykkelstasjoner, elbilutleiestasjoner 
+	og offentlig transportstasjoner i sanntid.
+    Markører: Forskjellige markører for ulike typer transportmidler. 
+	For eksempel kan sykkelstasjoner ha et sykkelikon, og elbilstasjoner kan ha et elbilikon.
+    Filtrering: Brukeren kan filtrere kartet for kun å 
+	vise bestemte typer transportmidler (f.eks. bare elbiler eller bare offentlig transport).<p>
 	
-	<p><b>Ruteoptimalisering
+	<p><b>Ruteoptimalisering : <b>
 
-    Dijkstra eller A algoritme*: Disse algoritmene kan brukes til å beregne de mest energieffektive rutene basert på tilgjengelighet av transportmidler og brukerens destinasjon.
+    Dijkstra eller A algoritme*: Disse algoritmene kan brukes til å beregne de mest energieffektive 
+	rutene basert på tilgjengelighet av transportmidler og brukerens destinasjon.
     Brukerpreferanser: Brukere kan velge ruter som fokuserer på miljøvennlighet, hastighet eller tilgjengelighet av transportmidler.<p>
     </main>
 
