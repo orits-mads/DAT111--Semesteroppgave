@@ -38,11 +38,38 @@
         </nav>
     </header>
 
-    <main class="container mt-4">
-        <h1>Løsning 2</h1>
-        <p>Dette er innholdet for Løsning 2.</p>
-        <img src="bilder/løsning2_full.jpg" class="img-fluid" alt="Løsning 2">
-        <p>Detaljer om Løsning 2 går her.</p>
+    <main id="main">
+	<section class ="container mt-4">
+        <h1>Smarte transport</h1>
+        <p>tilgjengelige grønne transportmidler som sykkelutleie, elbiler, og offentlig transport, og vil også vise sanntidsdata om tilgjengelighet og ruteoptimalisering.</p>
+        <img src="bilder/transporløsning_full.jpeg" class="img-fluid" alt="Løsning 2"  style= "width: 100%; height: auto; object-fit: cover>
+     <div class = "container mt-4"-content text center text-white">
+	  
+	  </div>
+	 </section>
+	 
+	 <section class = "content">
+		
+		<p>Kategorier for Transportløsninger
+
+    Sykkelutleie: Henter informasjon om tilgjengelige sykler fra API og viser i en tabell eller et kart.
+    Elbiler: Viser tilgjengelige elbiler og ladestasjoner på kartet.
+    Offentlig transport: Sanntidsinformasjon om ankomst- og avgangstider, og oversikt over ruter.</p>
+	<p><b> Sanntidsinformasjon
+
+    API-kall: Backend gjør periodiske kall til API-er fra sykkelutleie, elbilleie og offentlige transportaktører for å hente sanntidsdata.
+    Oppdatering på Frontend: Dataene oppdateres kontinuerlig på frontend ved bruk av WebSockets eller SSE.<p>
+	
+	<p><b> Kartvisning
+
+    Leaflet.js/Google Maps API: Kartet viser plassering av sykkelstasjoner, elbilutleiestasjoner og offentlig transportstasjoner i sanntid.
+    Markører: Forskjellige markører for ulike typer transportmidler. For eksempel kan sykkelstasjoner ha et sykkelikon, og elbilstasjoner kan ha et elbilikon.
+    Filtrering: Brukeren kan filtrere kartet for kun å vise bestemte typer transportmidler (f.eks. bare elbiler eller bare offentlig transport).<p>
+	
+	<p><b>Ruteoptimalisering
+
+    Dijkstra eller A algoritme*: Disse algoritmene kan brukes til å beregne de mest energieffektive rutene basert på tilgjengelighet av transportmidler og brukerens destinasjon.
+    Brukerpreferanser: Brukere kan velge ruter som fokuserer på miljøvennlighet, hastighet eller tilgjengelighet av transportmidler.<p>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
