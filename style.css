@@ -142,21 +142,53 @@ footer {
 }
 
 .contact-section {
-  padding: 20px;
-  background-color: #ffffff; 
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  background-color: #f8f9fa; 
+  padding: 20px; 
+  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.contact-section h2, .contact-section h3 {
-  color: #40a359; 
+.contact-section h2 {
+  margin-bottom: 20px; 
 }
 
 .contact-section img {
-  width: 150px; 
-  height: 150px; 
-  object-fit: cover; 
-  border-radius: 50%; 
+  width: 130px; 
+  height: 130px; 
+  border: 3px solid #28a745; 
+  transition: transform 0.2s; 
+}
+
+.contact-section img:hover {
+  transform: scale(1.05); 
+}
+
+.contact-section .col-md-2 {
+  text-align: center;
+}
+
+.contact-section a {
+  text-decoration: none; 
+  color: #007bff; 
+  display: block; 
+  margin: 10px 0;
+  padding: 5px 0; 
+  width: 180px; 
+  text-align: center; 
+  border-radius: 5px; 
+}
+
+.contact-section p {
+  margin: 10px 0; 
+}
+
+.contact-section a:hover {
+  text-decoration: underline; 
+}
+
+.contact-section .btn {
+  margin-top: 10px; 
 }
 
 .rounded-image {
