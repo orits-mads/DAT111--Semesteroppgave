@@ -14,7 +14,6 @@ body {
 }
 
 header {
-  padding: 1rem;
   background-color: #cbe0d6;
 }
 
@@ -116,7 +115,7 @@ footer {
 
 .hero {
   position: relative; 
-  height: 300px; 
+  height: 400px; 
   overflow: hidden; 
 }
 
@@ -282,4 +281,14 @@ form {
     border: 1px solid #ccc; 
     border-radius: 10px; 
     background-color: #f8f9fa; 
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.row {
+  padding: 1rem;
 }
