@@ -25,7 +25,6 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="location.href='solutions.html';">Løsninger</a>
                             <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
-                                <li><a class="dropdown-item" href="solutions.html">Oversikt</a></li>
                                 <li><a class="dropdown-item" href="solutions1.html">Løsning 1</a></li>
                                 <li><a class="dropdown-item" href="solutions2.html">Løsning 2</a></li>
                                 <li><a class="dropdown-item" href="solutions3.html">Løsning 3</a></li>
@@ -40,60 +39,63 @@
     </header>
 
     <main id="main">
-	<section class ="hero">
-       
-	   <img src="bilder\transportløsning.jpeg" class="img-fluid" alt="Løsning 2"  style= "width: 100%; height: auto; object-fit: cover">
-     <div class = "container mt-4-content text center text-white">
-	   
-	   <h1>Smarte transport</h1>
-       <p>tilgjengelige grønne transportmidler som sykkelutleie, elbiler, og offentlig transport, og vil også vise sanntidsdata om tilgjengelighet og ruteoptimalisering.</p>
-       
-	  
-	  </div>
-	 </section>
+        <section class="hero">
+            <img src="bilder\SmartTransport.webp" alt="Løsning 2" class="img-fluid" style="width: 100%; height: auto; object-fit: cover;">
+            <div class="hero-content text-center text-white">
+                <h1>Smarte transport</h1>
+                
+            </div>
+        </section>
 	 
-	 <section class = "content">
+	 <section class="container mt-4">
+        <article class="row">
+            <div class="col">
+                <h2>Tilgjengelige grønne transportmidler som sykkelutleie, elbiler, og offentlig transport, og vil også vise sanntidsdata om tilgjengelighet og ruteoptimalisering.</h2>
 		
 		<p>Kategorier for Transportløsninger: <b>
 
-   <p><b> Sykkelutleie: <b>
-    
-	<p><b>-  Henter informasjon om tilgjengelige sykler fra API 
-	og viser i en tabell eller et kart.<p>
-    
-	<p><b>- Elbiler: Viser tilgjengelige elbiler og ladestasjoner på kartet.<p>
-    Offentlig transport: Sanntidsinformasjon om ankomst- og avgangstider, 
-	og oversikt over ruter.<p>
-	
-	<p><b> Sanntidsinformasjon: <b>
+   <p><b> Sykkelutleie: </b></p>
+    <ul>
+        <li>Henter informasjon om tilgjengelige sykler fra API og viser i en tabell eller et kart.</li>
+    </ul>
 
-    <p><b>- API-kall: Backend gjør periodiske kall til API-er fra sykkelutleie, elbilleie
-	og offentlige transportaktører for å hente sanntidsdata. <p>
-	
-    <p><b>- Oppdatering på Frontend: Dataene oppdateres kontinuerlig 
-	på frontend ved bruk av WebSockets eller SSE.<p>
-	
-	<p><b> Kartvisning:<b>
-
-    <p><b>- Leaflet.js/Google Maps API: Kartet viser plassering av 
-	sykkelstasjoner, elbilutleiestasjoner 
-	og offentlig transportstasjoner i sanntid. <p>
-	
-    <p><b>- Markører: Forskjellige markører for ulike typer transportmidler. 
-	For eksempel kan sykkelstasjoner ha et sykkelikon, 
-	og elbilstasjoner kan ha et elbilikon.<p>
     
-	<p><b>- Filtrering: Brukeren kan filtrere kartet for kun å 
-	vise bestemte typer transportmidler 
-	(f.eks. bare elbiler eller bare offentlig transport).<p>
-	
-	<p><b> Ruteoptimalisering : <b>
+	<p><b>- Elbiler: Viser tilgjengelige elbiler og ladestasjoner på kartet.</b><p>
+    <ul>
+        <li>Viser tilgjengelige elbiler og ladestasjoner på kartet.</li>
+    </ul>
 
-    <p><b>- algoritme: Disse algoritmene kan brukes til å beregne de mest energieffektive 
-	rutene basert på tilgjengelighet av transportmidler og brukerens destinasjon.<p>
+	<p><b>- Offentlig transport: </b></p>
+    <ul>
+        <li>Sanntidsinformasjon om ankomst- og avgangstider, og oversikt over ruter.</li>
+    </ul>
 	
-    <p><b>- Brukerpreferanser: Brukere kan velge ruter som fokuserer på miljøvennlighet, 
-	hastighet eller tilgjengelighet av transportmidler.<p>
+	<p><b> Sanntidsinformasjon: </b></p>
+    <ul>
+        <li>API-kall: Backend gjør periodiske kall til API-er fra sykkelutleie, elbilleie og offentlige transportaktører for å hente sanntidsdata.</li>
+        <li>Oppdatering på Frontend: Dataene oppdateres kontinuerlig på frontend ved bruk av WebSockets eller SSE.</li>
+    </ul>
+	
+	<p><b> Kartvisning: </b></p>
+    <ul>
+        <li>Leaflet.js/Google Maps API: Kartet viser plassering av sykkelstasjoner, elbilutleiestasjoner og offentlig transportstasjoner i sanntid.</li>
+    </ul>
+	
+    <p><b>- Markører: Forskjellige markører for ulike typer transportmidler. </b></p>
+    <ul>
+        <li>For eksempel kan sykkelstasjoner ha et sykkelikon, og elbilstasjoner kan ha et elbilikon.</li>
+    </ul>
+    
+	<p><b>- Filtrering: Brukeren kan filtrere kartet for kun å vise bestemte typer transportmidler (f.eks. bare elbiler eller bare offentlig transport).</b><p>
+        
+	<p><b> Ruteoptimalisering : </b></p>
+    <ul>
+        <li>Disse algoritmene kan brukes til å beregne de mest energieffektive rutene basert på tilgjengelighet av transportmidler og brukerens destinasjon.</li>
+	    <li>Brukerpreferanser: Brukere kan velge ruter som fokuserer på miljøvennlighet, hastighet eller tilgjengelighet av transportmidler.</li>
+    </ul>
+            </div>
+        </article>
+    </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
