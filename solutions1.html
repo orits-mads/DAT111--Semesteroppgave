@@ -57,6 +57,112 @@
                 </div>
             </article>
         </section>
+
+        <section class="container mt-5">
+            <h2 class="text-center mb-4">Karbonfotavtrykk Sammenligning</h2>
+            <div class="card">
+                <div class="card-header">
+                    <div class="btn-group w-100" role="group">
+                        <button type="button" class="btn btn-outline-primary active" onclick="showData('before')">Før Implementering</button>
+                        <button type="button" class="btn btn-outline-primary" onclick="showData('after')">Etter Implementering</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="data-container" class="position-relative">
+                        <div id="data-visualization" style="height: 300px;"></div>
+                        <p id="emissions-text" class="text-center mt-3">Årlig CO₂-utslipp: ~500,000 tonn</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="text-muted"><small>*Dataene viser estimerte verdier basert på nåværende energiforbruk og projiserte tall etter full implementering av fusjonsenergi</small></p>
+            </div>
+        </section>
+
+        <script>
+            const beforeData = [
+                {year: '2024', emissions: 45000},
+                {year: '2027', emissions: 43000},
+                {year: '2030', emissions: 41000},
+                {year: '2033', emissions: 40000},
+                {year: '2036', emissions: 42000},
+                {year: '2039', emissions: 43000},
+                {year: '2042', emissions: 44000},
+                {year: '2045', emissions: 42000},
+                {year: '2048', emissions: 45000},
+                {year: '2050', emissions: 43000}
+            ];
+
+            const afterData = [
+                {year: '2024', emissions: 95},
+                {year: '2027', emissions: 90},
+                {year: '2030', emissions: 85},
+                {year: '2033', emissions: 80},
+                {year: '2036', emissions: 75},
+                {year: '2039', emissions: 70},
+                {year: '2042', emissions: 65},
+                {year: '2045', emissions: 60},
+                {year: '2048', emissions: 55},
+                {year: '2050', emissions: 50}
+            ];
+
+            function visualizeData(data, type) {
+                const container = document.getElementById('data-visualization');
+                container.innerHTML = '';
+                
+                const maxEmissions = Math.max(...data.map(d => d.emissions));
+                const chartHeight = container.offsetHeight - 40;  
+                
+                const chart = document.createElement('div');
+                chart.style.display = 'flex';
+                chart.style.alignItems = 'flex-end';
+                chart.style.height = '100%';
+                chart.style.justifyContent = 'space-between';
+                chart.style.padding = '20px 10px';
+                
+                data.forEach(d => {
+                    const bar = document.createElement('div');
+                    const height = (d.emissions / maxEmissions) * chartHeight;
+                    
+                    bar.style.width = `${90 / data.length}%`; 
+                    bar.style.height = `${height}px`;
+                    bar.style.backgroundColor = type === 'before' ? '#8B0000' : '#228B22'; 
+                    bar.style.position = 'relative';
+                    bar.title = `${d.year}: ${d.emissions} tonn CO₂`;
+                    
+                    const label = document.createElement('div');
+                    label.textContent = d.year;
+                    label.style.position = 'absolute';
+                    label.style.bottom = '-25px';
+                    label.style.width = '100%';
+                    label.style.textAlign = 'center';
+                    label.style.fontSize = '12px';
+                    
+                    bar.appendChild(label);
+                    chart.appendChild(bar);
+                });
+                
+                container.appendChild(chart);
+            }
+
+            function showData(type) {
+                const emissionsText = document.getElementById('emissions-text');
+                const buttons = document.querySelectorAll('.btn-outline-primary');
+                
+                buttons.forEach(btn => btn.classList.remove('active'));
+                event.target.classList.add('active');
+
+                if (type === 'before') {
+                    visualizeData(beforeData, 'before');
+                    emissionsText.textContent = 'Årlig CO₂-utslipp: ~500,000 tonn';
+                } else {
+                    visualizeData(afterData, 'after');
+                    emissionsText.textContent = 'Årlig CO₂-utslipp: ~1,000 tonn';
+                }
+            }
+
+            visualizeData(beforeData, 'before');
+        </script>
     </main>
 
     <footer class="footer text-center mt-4">
