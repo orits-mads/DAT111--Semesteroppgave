@@ -72,6 +72,76 @@
                 </div>
             </article>
     </section>
+
+        <section class="container mt-4">
+            <h2 class="text-center mb-4">Siste nytt fra HVLtopia</h2>
+            <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10500">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Fusjonskraftverk under planlegging</h5>
+                                <p class="card-text">Bergen kommune har godkjent første fase av planleggingen for byens nye fusjonskraftverk. Dette banebrytende prosjektet vil sikre ren energi for fremtidige generasjoner.</p>
+                                <p class="card-text"><small class="text-muted">Publisert: 15. mars 2024</small></p>
+                            </div>
+                            <div class="progress" style="height: 4px; border-radius: 0;">
+                                <div class="progress-bar bg-primary progress-timer" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Nye smarte transportløsninger lanseres</h5>
+                                <p class="card-text">HVLtopia introduserer innovative transportløsninger med fokus på tilgjengelighet. Systemet inkluderer sanntidsoppdateringer og universell utforming.</p>
+                                <p class="card-text"><small class="text-muted">Publisert: 10. mars 2024</small></p>
+                            </div>
+                            <div class="progress" style="height: 4px; border-radius: 0;">
+                                <div class="progress-bar bg-primary progress-timer" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Dataovervåkingssystem viser lovende resultater</h5>
+                                <p class="card-text">Første testfase av byens nye miljøovervåkingssystem viser positive resultater. Systemet gir verdifull innsikt i byens luftkvalitet og støynivåer.</p>
+                                <p class="card-text"><small class="text-muted">Publisert: 5. mars 2024</small></p>
+                            </div>
+                            <div class="progress" style="height: 4px; border-radius: 0;">
+                                <div class="progress-bar bg-primary progress-timer" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev" style="filter: brightness(0.5);">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next" style="filter: brightness(0.5);">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <style>
+                @keyframes progressAnimation {
+                    from { width: 0%; }
+                    to { width: 100%; }
+                }
+                .carousel-item.active .progress-timer {
+                    animation: progressAnimation 10s linear;
+                }
+            </style>
+        </section>
+
     </main>
 
     <footer class="footer text-center mt-4">

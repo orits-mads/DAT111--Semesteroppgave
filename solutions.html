@@ -64,8 +64,11 @@
                         </div>
                     </div>
                     <img src="bilder/accessibility.webp" alt="Accessibility icon" style="width: 30px; margin-top: 10px; cursor: pointer;" 
+                         tabindex="0"
                          onmouseover="document.getElementById('accessibleCard').style.border='2px solid #007bff'; document.getElementById('accessibilityTooltip').style.display='block';"
-                         onmouseout="document.getElementById('accessibleCard').style.border='1px solid #dee2e6'; document.getElementById('accessibilityTooltip').style.display='none';">
+                         onmouseout="document.getElementById('accessibleCard').style.border='1px solid #dee2e6'; document.getElementById('accessibilityTooltip').style.display='none';"
+                         onfocus="document.getElementById('accessibleCard').style.border='2px solid #007bff'; document.getElementById('accessibilityTooltip').style.display='block';"
+                         onblur="document.getElementById('accessibleCard').style.border='1px solid #dee2e6'; document.getElementById('accessibilityTooltip').style.display='none';">
                     <div id="accessibilityTooltip" style="display: none; position: absolute; background: white; border: 1px solid #007bff; padding: 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); max-width: 250px; z-index: 1000; font-size: 0.9em;">
                         Vi tilbyr:</br>
                         • Enkel bestilling av transport</br>
