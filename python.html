@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <img src="bilder/HVLtopia_logo.png" alt="HVLtopia logo" style="max-width: 150px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto"> 
+                        <li class="nav-item"><a class="nav-link" href="index.html">Hjem</a></li>
+                        <li class="nav-item"><a class="nav-link" href="project.html">Prosjekt</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="location.href='solutions.html';">Løsninger</a>
+                            <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                                <li><a class="dropdown-item" href="solutions1.html">Løsning 1</a></li>
+                                <li><a class="dropdown-item" href="solutions2.html">Løsning 2</a></li>
+                                <li><a class="dropdown-item" href="solutions3.html">Løsning 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="csr.html">Samfunnsansvar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="main">
+
+        <section class="container mt-4">
+            <h1>Python</h1>
+            <p>På denne siden kan du få visualisert luftkvaliteten i Bergen.
+                Ved å trykke deg rundt på kartet kan du se hvilken luftkvalitet det er i ulike områder i Bergen.
+                Du vil også få en grafisk fremstilling av forskjellen på Nordnes, Kronstad og der du klikket på kartet.
+            </p>
+        </section>
+        
+        <section class="container mt-4">
+            <img src="bilder/python.png" alt="Python" class="img-fluid">
+        </section>
+
+    </main>
+
+    <footer class="footer text-center mt-4">
+        <p>&copy; 2024 HVLtopia</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
