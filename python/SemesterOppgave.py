@@ -158,7 +158,7 @@ def plot_graph():
 
 plot_graph()
 
-# Replace the radio button creation and setup with a slider
+# Lager en slider for å velge intervall
 def create_interval_slider():
     slider = Slider(
         ax=axInterval,
@@ -185,7 +185,6 @@ def create_interval_slider():
     slider.on_changed(slider_callback)
     return slider
 
-# Replace the radio button creation at the bottom with:
 slider = create_interval_slider()
 
 # noinspection PyTypeChecker
