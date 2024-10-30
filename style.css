@@ -141,6 +141,10 @@ footer {
   z-index: 1; 
 }
 
+.hero h1 {
+  color: white;
+}
+
 .contact-section {
   background-color: #f8f9fa; 
   padding: 20px; 
