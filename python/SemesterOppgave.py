@@ -1,7 +1,7 @@
 import math
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.widgets import RadioButtons
+from matplotlib.widgets import Slider   #Bytter RadioButtons med Slider
 import matplotlib.image as mpimg
 import matplotlib.patches as mpatches
 
@@ -40,8 +40,8 @@ nord_nox_year = GenereateRandomYearDataList(intencity=.3, seed = 1)
 #create figure and 3 axis
 fig = plt.figure(figsize=(13, 5))
 
-axNok = fig.add_axes((0.05, 0.05, 0.45, 0.9))
-axInterval = fig.add_axes((0.4, 0.5, 0.1, 0.25))
+axNok = fig.add_axes((0.05, 0.2, 0.45, 0.75))
+axInterval = fig.add_axes((0.1, 0.05, 0.35, 0.05))
 axBergen = fig.add_axes((0.5, 0.05, 0.5, 0.9))
 
 axInterval.patch.set_alpha(0.5)
@@ -150,7 +150,7 @@ def plot_graph():
 
     #Plot Map of Bergen
     axBergen.axis('off')
-    img = mpimg.imread('Bergen.png')
+    img = mpimg.imread('python/bergen.png')
     img = axBergen.imshow(img)
     axBergen.set_title("Kart Bergen")
     draw_circles_stations();
@@ -158,19 +158,36 @@ def plot_graph():
 
 plot_graph()
 
-# draw radiobutton interval
-listFonts = [12] * 5
-listColors = ['yellow'] * 5
-radio_button = RadioButtons(axInterval, ('År',
-                                          '1. Kvartal',
-                                          '2. Kvartal',
-                                          '3. Kvartal',
-                                          '4. Kvartal'),
-                            label_props={'color': listColors, 'fontsize' : listFonts},
-                            radio_props={'facecolor': listColors,  'edgecolor': listColors},
-                            )
-axInterval.set_facecolor('darkblue')
-radio_button.on_clicked(on_day_interval)
+# Replace the radio button creation and setup with a slider
+def create_interval_slider():
+    slider = Slider(
+        ax=axInterval,
+        label='Kvartal',
+        valmin=0,
+        valmax=4,
+        valinit=0,
+        valstep=1,
+        color='lightblue'
+    )
+    
+    def slider_callback(val):
+        quarters = {
+            0: (1, 365),    # Hele året
+            1: (1, 90),     # 1. kvartal
+            2: (90, 180),   # 2. kvartal
+            3: (180, 270),  # 3. kvartal
+            4: (270, 365)   # 4. kvartal
+        }
+        global days_interval
+        days_interval = quarters[int(val)]
+        plot_graph()
+        
+    slider.on_changed(slider_callback)
+    return slider
+
+# Replace the radio button creation at the bottom with:
+slider = create_interval_slider()
+
 # noinspection PyTypeChecker
 plt.connect('button_press_event', on_click)
 
