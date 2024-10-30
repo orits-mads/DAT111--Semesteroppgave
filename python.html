@@ -49,12 +49,83 @@
                 Ved å trykke deg rundt på kartet kan du se hvilken luftkvalitet det er i ulike områder i Bergen.
                 Du vil også få en grafisk fremstilling av forskjellen på Nordnes, Kronstad og der du klikket på kartet.
             </p>
+
+            <div class="mt-4">
+                <!-- Steg 1 -->
+                <div class="row mb-4">
+                    <!-- Venstre kolonne: Instruksjoner -->
+                    <div class="col-md-6">
+                        <h4>1. Målestasjoner</h4>
+                        <p>Kartet viser to faste målestasjoner:</p>
+                        <ul>
+                            <li>Blå sirkel: Nordnes målestasjon</li>
+                            <li>Rød sirkel: Kronstad målestasjon</li>
+                        </ul>
+                        <p>Grafen tilsvarer NOX verdiene for disse to målestasjonene.</p>
+                    </div>
+                    <!-- Høyre kolonne: Eksempel -->
+                    <div class="col-md-6">
+                        <img src="bilder/python_oversikt.png" alt="Oversikt over programmet" class="img-fluid rounded shadow-sm border">
+                        <p class="mt-2 text-muted">Skjermbilde av kartet og grafen som viser NOX verdiene for de faste målestasjonene på Nordnes (blå) og Kronstad (rød)</p>
+                    </div>
+                </div>
+
+                <!-- Steg 2 -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h4>2. Velg nytt målepunkt</h4>
+                        <p>Klikk hvor som helst på kartet for å se estimert luftkvalitet for det valgte punktet.</p>
+                        <ul>
+                            <li>Det valgte punktet vises som en oransje sirkel</li>
+                            <li>En ny oransje linje vil vises i grafen</li>
+                        </ul>
+                        <p>Nytt målepunkt vises nå i grafen. <br>Gjennomsnittsverdier vises i en boks øverst til venstre i grafen når et punkt er valgt</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="bilder/python_valgt_punkt.png" alt="Eksempel med valgt punkt" class="img-fluid rounded shadow-sm border">
+                        <p class="mt-2 text-muted">Et valgt punkt (oransje) viser estimerte NOx-verdier for den lokasjonen</p>
+                    </div>
+                </div>
+
+                <!-- Steg 3 -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h4>3. Velg tidsperiode</h4>
+                        <p>Bruk glidebryteren under grafen for å velge hvilket kvartal du vil se data for:</p>
+                        <ul>
+                            <li>0: Hele året</li>
+                            <li>1: Januar - Mars</li>
+                            <li>2: April - Juni</li>
+                            <li>3: Juli - September</li>
+                            <li>4: Oktober - Desember</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="bilder/python_kvartal.png" alt="Visning av kvartaldata" class="img-fluid rounded shadow-sm border">
+                        <p class="mt-2 text-muted">Bruk glidebryteren for å veksle mellom ulike tidsperioder</p>
+                    </div>
+                </div>
+
+                <!-- Steg 4 -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h4>4. Forstå grafen</h4>
+                        <p>Grafen viser NOx-verdier over tid:</p>
+                        <ul>
+                            <li>Blå linje: Nordnes målinger</li>
+                            <li>Rød linje: Kronstad målinger</li>
+                            <li>Oransje linje: Estimerte verdier for valgt punkt</li>
+                        </ul>
+                        <p>Gjennomsnittsverdier vises i en boks øverst til venstre i grafen når et punkt er valgt</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="bilder/python_graf.png" alt="Detaljert visning av graf" class="img-fluid rounded shadow-sm border" style="max-width: 400px;">
+                        <p class="mt-2 text-muted">Grafen viser NOx-verdier og gjennomsnitt for alle målepunkt</p>
+                    </div>
+                </div>
+            </div>
         </section>
         
-        <section class="container mt-4">
-            <img src="bilder/python.png" alt="Python" class="img-fluid">
-        </section>
-
     </main>
 
     <footer class="footer text-center mt-4">
